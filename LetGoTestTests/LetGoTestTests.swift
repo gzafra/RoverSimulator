@@ -11,26 +11,36 @@ import XCTest
 
 class LetGoTestTests: XCTestCase {
     
+    var roversManager: RoversManager!
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        roversManager = RoversManager()
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        roversManager = nil
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSimpleMovement() {
+        let orders: [Orders] = [.forward, .right, .forward]
+        roversManager.simulateWithOrders(orders)
+        assert(roversManager.finalPosition == (1, 1), "Simple movement failed")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testNorthWall() {
+        let orders: [Orders] = [.forward, .forward, .forward, .forward, .forward, .forward]
+        roversManager.simulateWithOrders(orders)
+        assert(roversManager.finalPosition == (0, 4), "North wall test failed")
+    }
+    
+    func test360Rotation() {
+        let orders: [Orders] = [.right, .right, .right, .right, .forward]
+        roversManager.simulateWithOrders(orders)
+        assert(roversManager.finalPosition == (0, 1), "360 Rotation failed")
     }
     
 }

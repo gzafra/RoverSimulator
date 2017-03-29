@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: Properties
+    let roversManager = RoversManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let orders: [Orders] = [.forward, .right, .forward]
+        roversManager.simulateWithOrders(orders)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func runSimulationButtonTapped(_ sender: Any) {
+        
+    }
 
 }
 

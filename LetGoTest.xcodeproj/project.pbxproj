@@ -13,6 +13,7 @@
 		B618178D1E8C24D9004FD0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B618178C1E8C24D9004FD0C6 /* Assets.xcassets */; };
 		B61817901E8C24D9004FD0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B618178E1E8C24D9004FD0C6 /* LaunchScreen.storyboard */; };
 		B618179B1E8C24D9004FD0C6 /* LetGoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618179A1E8C24D9004FD0C6 /* LetGoTestTests.swift */; };
+		B61817A91E8C289D004FD0C6 /* RoversManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61817A81E8C289D004FD0C6 /* RoversManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B61817961E8C24D9004FD0C6 /* LetGoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetGoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B618179A1E8C24D9004FD0C6 /* LetGoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetGoTestTests.swift; sourceTree = "<group>"; };
 		B618179C1E8C24D9004FD0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61817A81E8C289D004FD0C6 /* RoversManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoversManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,11 @@
 		B61817841E8C24D8004FD0C6 /* LetGoTest */ = {
 			isa = PBXGroup;
 			children = (
+				B61817A71E8C2875004FD0C6 /* Controllers */,
+				B61817A61E8C2871004FD0C6 /* Views */,
+				B61817A51E8C285E004FD0C6 /* Logic */,
 				B61817851E8C24D8004FD0C6 /* AppDelegate.swift */,
+				B61817A81E8C289D004FD0C6 /* RoversManager.swift */,
 				B61817871E8C24D8004FD0C6 /* ViewController.swift */,
 				B61817891E8C24D9004FD0C6 /* Main.storyboard */,
 				B618178C1E8C24D9004FD0C6 /* Assets.xcassets */,
@@ -94,6 +100,27 @@
 				B618179C1E8C24D9004FD0C6 /* Info.plist */,
 			);
 			path = LetGoTestTests;
+			sourceTree = "<group>";
+		};
+		B61817A51E8C285E004FD0C6 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		B61817A61E8C2871004FD0C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B61817A71E8C2875004FD0C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +228,7 @@
 			files = (
 				B61817881E8C24D8004FD0C6 /* ViewController.swift in Sources */,
 				B61817861E8C24D8004FD0C6 /* AppDelegate.swift in Sources */,
+				B61817A91E8C289D004FD0C6 /* RoversManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
