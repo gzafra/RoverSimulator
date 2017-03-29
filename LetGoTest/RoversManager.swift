@@ -56,9 +56,8 @@ public class RoversManager: NSObject {
     
     public var finalPosition: Coords!
 
+    /// Receives an array of orders and simulatest movement of the rover
     func simulateWithOrders(_ arrayOfOrders: [Orders]) {
-        // TODO: Validate input values
-
         var currentPosition = initialPoint
         var projectedPosition = currentPosition
         var currentDirection = initialDirection
@@ -74,6 +73,7 @@ public class RoversManager: NSObject {
                 projectedPosition += currentDirection.movementMod()
             }
             
+            // Validate the coords the rover has moved on are valid
             guard validCoords(projectedPosition) else {
                 print("Found wall, ignoring movement")
                 projectedPosition = currentPosition
