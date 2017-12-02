@@ -12,7 +12,7 @@
 		B618178B1E8C24D9004FD0C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61817891E8C24D9004FD0C6 /* Main.storyboard */; };
 		B618178D1E8C24D9004FD0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B618178C1E8C24D9004FD0C6 /* Assets.xcassets */; };
 		B61817901E8C24D9004FD0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B618178E1E8C24D9004FD0C6 /* LaunchScreen.storyboard */; };
-		B618179B1E8C24D9004FD0C6 /* LetGoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618179A1E8C24D9004FD0C6 /* LetGoTestTests.swift */; };
+		B618179B1E8C24D9004FD0C6 /* RoverTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618179A1E8C24D9004FD0C6 /* RoverTestTests.swift */; };
 		B61817A91E8C289D004FD0C6 /* RoversManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61817A81E8C289D004FD0C6 /* RoversManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,15 +27,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B61817821E8C24D8004FD0C6 /* LetGoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetGoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61817821E8C24D8004FD0C6 /* RoverTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoverTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61817851E8C24D8004FD0C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B61817871E8C24D8004FD0C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B618178A1E8C24D9004FD0C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B618178C1E8C24D9004FD0C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B618178F1E8C24D9004FD0C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B61817911E8C24D9004FD0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B61817961E8C24D9004FD0C6 /* LetGoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetGoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B618179A1E8C24D9004FD0C6 /* LetGoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetGoTestTests.swift; sourceTree = "<group>"; };
+		B61817961E8C24D9004FD0C6 /* RoverTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoverTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B618179A1E8C24D9004FD0C6 /* RoverTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverTestTests.swift; sourceTree = "<group>"; };
 		B618179C1E8C24D9004FD0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61817A81E8C289D004FD0C6 /* RoversManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoversManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,8 +61,8 @@
 		B61817791E8C24D8004FD0C6 = {
 			isa = PBXGroup;
 			children = (
-				B61817841E8C24D8004FD0C6 /* LetGoTest */,
-				B61817991E8C24D9004FD0C6 /* LetGoTestTests */,
+				B61817841E8C24D8004FD0C6 /* RoverTest */,
+				B61817991E8C24D9004FD0C6 /* RoverTestTests */,
 				B61817831E8C24D8004FD0C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 		B61817831E8C24D8004FD0C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B61817821E8C24D8004FD0C6 /* LetGoTest.app */,
-				B61817961E8C24D9004FD0C6 /* LetGoTestTests.xctest */,
+				B61817821E8C24D8004FD0C6 /* RoverTest.app */,
+				B61817961E8C24D9004FD0C6 /* RoverTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B61817841E8C24D8004FD0C6 /* LetGoTest */ = {
+		B61817841E8C24D8004FD0C6 /* RoverTest */ = {
 			isa = PBXGroup;
 			children = (
 				B61817A71E8C2875004FD0C6 /* Controllers */,
@@ -86,16 +86,16 @@
 				B618178C1E8C24D9004FD0C6 /* Assets.xcassets */,
 				B61817911E8C24D9004FD0C6 /* Info.plist */,
 			);
-			path = LetGoTest;
+			path = RoverTest;
 			sourceTree = "<group>";
 		};
-		B61817991E8C24D9004FD0C6 /* LetGoTestTests */ = {
+		B61817991E8C24D9004FD0C6 /* RoverTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				B618179A1E8C24D9004FD0C6 /* LetGoTestTests.swift */,
+				B618179A1E8C24D9004FD0C6 /* RoverTestTests.swift */,
 				B618179C1E8C24D9004FD0C6 /* Info.plist */,
 			);
-			path = LetGoTestTests;
+			path = RoverTestTests;
 			sourceTree = "<group>";
 		};
 		B61817A51E8C285E004FD0C6 /* Logic */ = {
@@ -126,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B61817811E8C24D8004FD0C6 /* LetGoTest */ = {
+		B61817811E8C24D8004FD0C6 /* RoverTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B618179F1E8C24D9004FD0C6 /* Build configuration list for PBXNativeTarget "LetGoTest" */;
+			buildConfigurationList = B618179F1E8C24D9004FD0C6 /* Build configuration list for PBXNativeTarget "RoverTest" */;
 			buildPhases = (
 				B618177E1E8C24D8004FD0C6 /* Sources */,
 				B618177F1E8C24D8004FD0C6 /* Frameworks */,
@@ -138,14 +138,14 @@
 			);
 			dependencies = (
 			);
-			name = LetGoTest;
+			name = RoverTest;
 			productName = LetGoTest;
-			productReference = B61817821E8C24D8004FD0C6 /* LetGoTest.app */;
+			productReference = B61817821E8C24D8004FD0C6 /* RoverTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B61817951E8C24D9004FD0C6 /* LetGoTestTests */ = {
+		B61817951E8C24D9004FD0C6 /* RoverTestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B61817A21E8C24D9004FD0C6 /* Build configuration list for PBXNativeTarget "LetGoTestTests" */;
+			buildConfigurationList = B61817A21E8C24D9004FD0C6 /* Build configuration list for PBXNativeTarget "RoverTestTests" */;
 			buildPhases = (
 				B61817921E8C24D9004FD0C6 /* Sources */,
 				B61817931E8C24D9004FD0C6 /* Frameworks */,
@@ -156,9 +156,9 @@
 			dependencies = (
 				B61817981E8C24D9004FD0C6 /* PBXTargetDependency */,
 			);
-			name = LetGoTestTests;
+			name = RoverTestTests;
 			productName = LetGoTestTests;
-			productReference = B61817961E8C24D9004FD0C6 /* LetGoTestTests.xctest */;
+			productReference = B61817961E8C24D9004FD0C6 /* RoverTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B618177D1E8C24D8004FD0C6 /* Build configuration list for PBXProject "LetGoTest" */;
+			buildConfigurationList = B618177D1E8C24D8004FD0C6 /* Build configuration list for PBXProject "RoverTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,8 +195,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B61817811E8C24D8004FD0C6 /* LetGoTest */,
-				B61817951E8C24D9004FD0C6 /* LetGoTestTests */,
+				B61817811E8C24D8004FD0C6 /* RoverTest */,
+				B61817951E8C24D9004FD0C6 /* RoverTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B618179B1E8C24D9004FD0C6 /* LetGoTestTests.swift in Sources */,
+				B618179B1E8C24D9004FD0C6 /* RoverTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +245,7 @@
 /* Begin PBXTargetDependency section */
 		B61817981E8C24D9004FD0C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B61817811E8C24D8004FD0C6 /* LetGoTest */;
+			target = B61817811E8C24D8004FD0C6 /* RoverTest */;
 			targetProxy = B61817971E8C24D9004FD0C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -367,9 +367,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LetGoTest/Info.plist;
+				INFOPLIST_FILE = RoverTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.LetGoTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.RoverTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -379,9 +379,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LetGoTest/Info.plist;
+				INFOPLIST_FILE = RoverTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.LetGoTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.RoverTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -397,7 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.LetGoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetGoTest.app/LetGoTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoverTest.app/RoverTest";
 			};
 			name = Debug;
 		};
@@ -411,14 +411,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gzafra.LetGoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetGoTest.app/LetGoTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoverTest.app/RoverTest";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B618177D1E8C24D8004FD0C6 /* Build configuration list for PBXProject "LetGoTest" */ = {
+		B618177D1E8C24D8004FD0C6 /* Build configuration list for PBXProject "RoverTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B618179D1E8C24D9004FD0C6 /* Debug */,
@@ -427,21 +427,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B618179F1E8C24D9004FD0C6 /* Build configuration list for PBXNativeTarget "LetGoTest" */ = {
+		B618179F1E8C24D9004FD0C6 /* Build configuration list for PBXNativeTarget "RoverTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B61817A01E8C24D9004FD0C6 /* Debug */,
 				B61817A11E8C24D9004FD0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B61817A21E8C24D9004FD0C6 /* Build configuration list for PBXNativeTarget "LetGoTestTests" */ = {
+		B61817A21E8C24D9004FD0C6 /* Build configuration list for PBXNativeTarget "RoverTestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B61817A31E8C24D9004FD0C6 /* Debug */,
 				B61817A41E8C24D9004FD0C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

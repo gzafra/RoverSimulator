@@ -1,15 +1,15 @@
 //
-//  LetGoTestTests.swift
-//  LetGoTestTests
+//  RoverTestTestTests.swift
+//  RoverTestTestTests
 //
 //  Created by Guillermo Zafra on 29/03/2017.
 //  Copyright © 2017 Guillermo Zafra. All rights reserved.
 //
 
 import XCTest
-@testable import LetGoTest
+@testable import RoverTestTest
 
-class LetGoTestTests: XCTestCase {
+class RoverTestTestTests: XCTestCase {
     
     var roversManager: RoversManager!
     

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  LetGoTest
+//  RoverTestTest
 //
 //  Created by Guillermo Zafra on 29/03/2017.
 //  Copyright © 2017 Guillermo Zafra. All rights reserved.
