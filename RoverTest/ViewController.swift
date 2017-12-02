@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let orders: [Orders] = [.forward, .right, .forward]
+        let orders: [Command] = [.forward, .right, .forward]
         roversManager.simulateWithOrders(orders)
     }
 

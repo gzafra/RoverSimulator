@@ -14,6 +14,12 @@
 		B61817901E8C24D9004FD0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B618178E1E8C24D9004FD0C6 /* LaunchScreen.storyboard */; };
 		B618179B1E8C24D9004FD0C6 /* RoverTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618179A1E8C24D9004FD0C6 /* RoverTestTests.swift */; };
 		B61817A91E8C289D004FD0C6 /* RoversManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61817A81E8C289D004FD0C6 /* RoversManager.swift */; };
+		B66DC8BF1FD2B7BE00B76F35 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DC8BE1FD2B7BE00B76F35 /* Rover.swift */; };
+		B66DC8C11FD2B84000B76F35 /* RoverEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DC8C01FD2B84000B76F35 /* RoverEnums.swift */; };
+		B66DC8C31FD2B87700B76F35 /* Coords.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DC8C21FD2B87700B76F35 /* Coords.swift */; };
+		B66DC8C71FD2B98800B76F35 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DC8C61FD2B98800B76F35 /* Area.swift */; };
+		B66DC8CA1FD2CB6800B76F35 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DC8C91FD2CB6800B76F35 /* Matrix.swift */; };
+		B66DC8CD1FD2CDED00B76F35 /* RoverError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DC8CC1FD2CDED00B76F35 /* RoverError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		B618179A1E8C24D9004FD0C6 /* RoverTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverTestTests.swift; sourceTree = "<group>"; };
 		B618179C1E8C24D9004FD0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61817A81E8C289D004FD0C6 /* RoversManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoversManager.swift; sourceTree = "<group>"; };
+		B66DC8BE1FD2B7BE00B76F35 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
+		B66DC8C01FD2B84000B76F35 /* RoverEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverEnums.swift; sourceTree = "<group>"; };
+		B66DC8C21FD2B87700B76F35 /* Coords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coords.swift; sourceTree = "<group>"; };
+		B66DC8C61FD2B98800B76F35 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		B66DC8C91FD2CB6800B76F35 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		B66DC8CC1FD2CDED00B76F35 /* RoverError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +113,10 @@
 		B61817A51E8C285E004FD0C6 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				B61817A81E8C289D004FD0C6 /* RoversManager.swift */,
+				B66DC8CB1FD2CDE000B76F35 /* Errors */,
+				B66DC8C81FD2CB5C00B76F35 /* Utility */,
+				B66DC8C51FD2B97300B76F35 /* Managers */,
+				B66DC8C41FD2B96900B76F35 /* Model */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -121,6 +136,41 @@
 				B61817871E8C24D8004FD0C6 /* ViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B66DC8C41FD2B96900B76F35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B66DC8BE1FD2B7BE00B76F35 /* Rover.swift */,
+				B66DC8C01FD2B84000B76F35 /* RoverEnums.swift */,
+				B66DC8C21FD2B87700B76F35 /* Coords.swift */,
+				B66DC8C61FD2B98800B76F35 /* Area.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B66DC8C51FD2B97300B76F35 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B61817A81E8C289D004FD0C6 /* RoversManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		B66DC8C81FD2CB5C00B76F35 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B66DC8C91FD2CB6800B76F35 /* Matrix.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		B66DC8CB1FD2CDE000B76F35 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				B66DC8CC1FD2CDED00B76F35 /* RoverError.swift */,
+			);
+			name = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66DC8BF1FD2B7BE00B76F35 /* Rover.swift in Sources */,
+				B66DC8C31FD2B87700B76F35 /* Coords.swift in Sources */,
 				B61817881E8C24D8004FD0C6 /* ViewController.swift in Sources */,
+				B66DC8C11FD2B84000B76F35 /* RoverEnums.swift in Sources */,
+				B66DC8CA1FD2CB6800B76F35 /* Matrix.swift in Sources */,
 				B61817861E8C24D8004FD0C6 /* AppDelegate.swift in Sources */,
+				B66DC8C71FD2B98800B76F35 /* Area.swift in Sources */,
+				B66DC8CD1FD2CDED00B76F35 /* RoverError.swift in Sources */,
 				B61817A91E8C289D004FD0C6 /* RoversManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
