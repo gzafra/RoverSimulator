@@ -83,11 +83,7 @@
 				B61817A61E8C2871004FD0C6 /* Views */,
 				B61817A51E8C285E004FD0C6 /* Logic */,
 				B61817851E8C24D8004FD0C6 /* AppDelegate.swift */,
-				B61817A81E8C289D004FD0C6 /* RoversManager.swift */,
-				B61817871E8C24D8004FD0C6 /* ViewController.swift */,
-				B61817891E8C24D9004FD0C6 /* Main.storyboard */,
 				B618178C1E8C24D9004FD0C6 /* Assets.xcassets */,
-				B618178E1E8C24D9004FD0C6 /* LaunchScreen.storyboard */,
 				B61817911E8C24D9004FD0C6 /* Info.plist */,
 			);
 			path = LetGoTest;
@@ -105,6 +101,7 @@
 		B61817A51E8C285E004FD0C6 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				B61817A81E8C289D004FD0C6 /* RoversManager.swift */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -112,6 +109,8 @@
 		B61817A61E8C2871004FD0C6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B61817891E8C24D9004FD0C6 /* Main.storyboard */,
+				B618178E1E8C24D9004FD0C6 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -119,6 +118,7 @@
 		B61817A71E8C2875004FD0C6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B61817871E8C24D8004FD0C6 /* ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

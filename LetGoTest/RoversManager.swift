@@ -8,6 +8,9 @@
 
 import UIKit
 
+/* TODO: Could actually avoid the whole manager and just return the final position but a more complex approach
+ could definitely benefit from a manager that handles all the logic.
+*/
 
 // MARK: - Enums
 public enum Direction: Int {
