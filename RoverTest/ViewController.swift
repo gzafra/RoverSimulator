@@ -11,13 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     
     // MARK: Properties
-    let roversManager = RoversManager()
+    let roversManager = RoversManager(withSize: (5,5))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let orders: [Command] = [.forward, .right, .forward]
-        roversManager.simulateWithOrders(orders)
+
     }
 
     override func didReceiveMemoryWarning() {

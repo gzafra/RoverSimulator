@@ -20,7 +20,7 @@ final class Rover {
     var coords: Coords = (0, 0)
     var state: RoverState = .idle
     
-    init(with identifier: Int, startingDirection: Direction, commands: [Command] = []) {
+    init(withIdentifier identifier: Int, startingDirection: Direction, commands: [Command] = []) {
         self.identifier = identifier
         self.currentDirection = startingDirection
         self.commandsQueue = commands

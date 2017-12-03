@@ -18,9 +18,9 @@ public enum Direction: Int {
     func movementMod() -> Coords {
         switch self {
         case .north:
-            return (0, 1)
-        case .south:
             return (0, -1)
+        case .south:
+            return (0, 1)
         case .east:
             return (1, 0)
         case .west:

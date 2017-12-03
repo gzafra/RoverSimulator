@@ -8,16 +8,19 @@
 
 import Foundation
 
-public class RoversManager: NSObject {
+public final class RoversManager: NSObject {
     
-    static let gridSize: Size = (5, 5)
-    private let area = Area(with: gridSize)
+    private let gridSize: Size
+    private let area: Area
     private var rovers = [Rover]()
+    var finishedProcessing: Bool {
+        return (rovers.reduce(0) {$0 + $1.commandsQueue.count } == 0)
+    }
     
-    public var initialPoint: Coords = (0, 0)
-    public var initialDirection: Direction = .north
-    
-    public var finalPosition: Coords!
+    init(withSize size: Size) {
+        gridSize = size
+        area = Area(with: gridSize)
+    }
     
     func add(rover: Rover, at coords: Coords) throws {
         guard isValid(coords: coords) else {
@@ -36,15 +39,14 @@ public class RoversManager: NSObject {
         rovers.append(rover)
     }
     
-    func processRoverOrders() {
+    func processRoverCommands() {
         for rover in rovers {
             guard !rover.commandsQueue.isEmpty else {
-                rover.state = .idle
                 continue
             }
             
-            rover.state = .running
             let nextOrder = rover.commandsQueue.removeFirst()
+            rover.state = rover.commandsQueue.count == 0 ? .idle : .running
             var projectedPosition = rover.coords
             var currentDirection = rover.currentDirection
             
@@ -59,10 +61,17 @@ public class RoversManager: NSObject {
             
             // Validate the coords the rover would move on are valid
             guard isValid(coords: projectedPosition) else {
-                return
+                continue
             }
             
             rover.coords = projectedPosition
+            rover.currentDirection = currentDirection
+        }
+    }
+    
+    func simulateScenario() {
+        while !finishedProcessing {
+            processRoverCommands()
         }
     }
     
